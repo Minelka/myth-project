@@ -1,0 +1,40 @@
+html,body,#root{
+    height: 100%;
+}
+.login-page{
+    background: linear-gradient(#00000000,black),url("https://cdn.pixabay.com/photo/2020/03/08/15/25/cover-painting-4912734_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    .bold {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          opacity: 0.2;
+        }
+      }
+    form{
+        width: 300px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.41);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        a{
+            color:whitesmoke;
+            position: absolute;
+            left:10px;
+            bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+nav{
+    background-color: #FFD460;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 0;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+
+    .brand{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 100px;
+        }
+    }
+    .usercard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        button{
+            padding: 5px 10px;
+            border-radius: 7px;
+            border: 1px solid #2D4059;
+            color: #FFD460;
+            background-color: #2D4059;
+            cursor: pointer;
+            transition: .7s;
+            &:hover{
+                background-color: #FFD460;
+                color: #2D4059;
+                box-shadow: 3px 3px 15px #2D4059;
+            }
+        }
+    }
+}
+svg{
+    position: relative;
+    top: -20px;
+    z-index: -1;
+}
+

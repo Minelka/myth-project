@@ -1,0 +1,9 @@
+1-./src altına contextleri barındırmak için "context" isimli bir klasör oluşturuldu.
+2- DataContext.jsx dosyası oluşturuldu.
+3- DataContext dosyasına createContext() metodu ile bir context yaratıldı.
+4- Yaratılan context'e bir sağlayıcı oluşturuldu. (Data Provider)
+5-DataProvider metodu içerisinde yapıda kullanılan tüm metot state ... vs. taşındı.
+6- Bu provider returnünde <DataContext.Provider><DataContext.Provider/> tagleri arasına verilen{children} parametresi ile yapıda context'in geçerli olacağı ver belirlendi.
+7-main.jsx dosyası içerisindeki App componendi <DataProvider></DataProvider> ile sarmalandı. bu children bu projede App yerine geçiyor.
+8-artık yapı Context Api düzenine geçtiği için tüm prop yapıları temizlendi. tek tek componentlere o component için gerekli yapılar context üzerinden sağlandı.
+9- context'in providerının returnundaki <DataContext.Provider> tagine value={{kullanılan yapılar}} verildi.
